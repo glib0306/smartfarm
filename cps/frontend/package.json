@@ -1,0 +1,35 @@
+{
+  "name": "smartfarm-cps-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-scripts": "4.0.3",
+    "recharts": "2.1.16",
+    "three": "0.137.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.16.12"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  }
+}

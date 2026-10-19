@@ -1,0 +1,22 @@
+{
+  "name": "smartfarm-seed-mes-cps",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Smart Integrated Manufacturing System (MES + CPS) for wheat and rice seed farms - offline",
+  "scripts": {
+    "mes": "node mes/backend/server.js",
+    "cps": "node cps/backend/server.js",
+    "db:generate": "python database/generate_sql.py",
+    "test:analytics": "python analytics/selftest.py",
+    "install:all": "npm install && cd mes/frontend && npm install && cd ../../cps/frontend && npm install",
+    "build:all": "cd mes/frontend && npm run build && cd ../../cps/frontend && npm run build"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  }
+}
